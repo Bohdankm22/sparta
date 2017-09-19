@@ -317,9 +317,6 @@ public class AndroidTests {
             //Test it once, with expected errors
             super.run();
 
-            // TODO: StubGenerator doesn't produce well formed stub files any more.
-            // See https://github.com/typetools/checker-framework/issues/1488
-            /*
             //Test it again with the generated stub file,
             //and expect no errors/warnings, but "Note: All methods reviewed"
             boolean shouldEmitDebugInfo = TestUtilities.getShouldEmitDebugInfo();
@@ -338,7 +335,7 @@ public class AndroidTests {
 
             TypecheckResult testResult = executor.runTest(config);
             TestUtilities.assertResultsAreValid(testResult);
-            */
+
         }
     }
 
